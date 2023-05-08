@@ -1,0 +1,4 @@
+Fields: Name, dob, phone, gender, addr1, addr2, city, pin code, voter id number(primary key)
+Button: Save, update, delete, search
+
+isSet($_POST['btn-save']) //if the name of the button is 'btn-save'

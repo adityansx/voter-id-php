@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Voter ID Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1 id="heading">Voter ID registration form</h1>
+    <form action="./register.php" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" placeholder="Enter your name" aria-placeholder="Enter your name" minlength="5">
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" max="2005-02-01">
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phonenum" id="phone" pattern="^(?:0|\+?91)|(?:\d\s?){10}$">
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <fieldset id="gender">
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </label>
+            </fieldset>
+        </div>
+        <div>
+            <!-- addr1 -->
+            <label for="pAddr">Present Address: </label>
+            <textarea name="presentAddr" id="pAddr" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <!-- addr2 -->
+            <label for="permAddr">Permanent Address: </label>
+            <textarea name="permanentAddr" id="permAddr" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <!-- city -->
+        </div>
+        <div>
+            <label for="pincode">Pincode:</label>
+            <input type="number" name="pincode" id="pincode" min="100000" max="999999">
+        </div>
+        <div>
+            <label for="voterid">Voter ID Number</label>
+            <input type="text" name="voterid" id="voterid">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

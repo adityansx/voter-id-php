@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Voter ID Records</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1 id="heading">Search Voter ID Records</h1>
+    <form action="search.php" method="post">
+        <div>
+            <label for="searchField">Enter Voter ID Number</label>
+            <input type="text" id="searchField" name="query">
+        </div>
+        <div>
+            <input type="submit" value="Search">
+        </div>
+        <div><input type="button" value="Test" onclick="test()"></div>
+    </form>
+    <script>
+        function test() {
+            window.location.assign('http://localhost/voter_id/db.php');
+        }
+    </script>
+</body>
+</html>
